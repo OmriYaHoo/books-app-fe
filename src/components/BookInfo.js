@@ -8,17 +8,26 @@ class BookInfo extends Component {
 
     render() {
         return (
-            <div className="animated zoomIn single-book">
+            <div className="animated fadeIn single-book">
                 <h1 className="infoHead">Book Info</h1>
                 <ul className="bookInfoList">
                     <li>
                         <b>Title:</b> {this.props.bookData.title}
                     </li>
                     <li>
-                        <b>Release Year:</b> {this.props.bookData.release_year}
+                        <b>Description:</b> {this.props.bookData.description}
                     </li>
                     <li>
-                        <b>Category:</b> {this.props.bookData.category}
+                        <b>ISBN Number:</b> {this.props.bookData.isbn}
+                    </li>
+                    <li>
+                        <b>Author:</b> {this.props.bookData.author}
+                    </li>
+                    <li>
+                        <b>Publication Date:</b> {this.props.bookData.publication_date}
+                    </li>
+                    <li>
+                        <b>Genre:</b> {this.props.bookData.genre}
                     </li>
                     <li>
                         <b>Price:</b> {this.props.bookData.price}$
